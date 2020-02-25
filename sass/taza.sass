@@ -1,0 +1,279 @@
+$gray: #e3e3e3
+$green: #38827b
+$dark: #20303c
+$Sans: 'Open sans', 'sans-serif'
+$Barlow: 'Barlow Semi Condensed', sans-serif
+$Muli: 'Muli', sans-serif
+$Khula: 'Khula', sans-serif
+
+@function rem($target)
+	$result : $target / 16px + 0rem
+	@return $result
+
+@import '_head'
+@import '_services'
+@import '_about'
+@import '_gallery'
+@import '_contact'
+
+.slicknav_menu
+	display: none
+
+body 
+	background: #ededed
+	margin: 0
+	padding: 0
+	overflow-x: hidden
+	position: relative
+
+@media screen and (max-width: 1280px)
+	.footer_text
+		font-size: 16px
+		max-width: 1180px
+
+@media screen and (max-width: 1024px)
+	.about_content
+		margin-left: 35px
+	.aboutUs
+		&:first-child
+			.about_img
+				width: 510px
+				margin-right: 250px
+	.aboutUs_2
+		.about_img
+			width: 540px
+		.about_content
+			margin-left: 40px
+			max-width: 410px
+	.services_list
+		max-width: 880px
+	.bg_box
+		left: -205px
+		top: 90px
+		width: 590px
+		height: 290px
+	.details
+		margin-top: 13px
+	.slogan
+		font-size: 45px	
+		padding-top: 20px	
+	.footer_text
+		font-size: 14px
+		max-width: 970px	
+	.navbar
+		margin-left: -25px	
+	.social_list
+		margin-right: 40px		
+
+@media screen and (max-width: 992px)
+	.bg_box
+		left: -208px
+		width: 560px
+		height: 280px
+	.details
+		margin-top: 3px	
+	.aboutUs
+		&:first-child
+			.about_img
+				width: 500px
+				margin-right: 260px
+	.aboutUs_2
+		.about_img
+			width: 540px
+		.about_content
+			margin-top: 10px
+			margin-left: 35px
+			max-width: 390px
+
+@media screen and (max-width: 768px)
+	.intro
+		height: 65px
+	.logo
+		width: 190px
+		height: 33px
+		margin-top: 14px	
+	.call	
+		width: 270px
+		padding-top: 5px
+		font-size: 15.5px	
+	.nav_list
+		max-width: 530px
+		a
+			font-size: 14px	
+	.social_list
+		width: 75px		
+	.social
+		width: 18px
+		height: 18px
+	.head_bg
+		height: 610px
+	.bg_box
+		left: -500px
+		top: 20px
+		height: 260px
+		width: 530px
+	.slogan
+		font-size: 40px
+	.details
+		height: 60px
+		width: 320px
+		margin-top: 14px
+		padding: 20px
+		&:after 
+			padding: 26px
+			margin: -50px -49px 0 0	
+	.services_list
+		max-width: 720px		
+	.services_item
+		width: 350px
+		height: 240px
+		img 
+			width: 60px
+			height: 60px
+	.services_title
+		font-size: 19px	
+	.services_text
+		font-size: 13px
+		max-width: 330px
+	.info
+		margin-top: 45px
+		font-size: 21px	
+		line-height: 22px									
+	.aboutUs
+		margin-top: 75px
+		height: 400px
+		max-width: 768px
+		&:first-child
+			.about_img
+				width: 384px
+				height: 300px
+				margin: 0
+				margin-top: 20px
+	.about_text
+		font-size: 14.5px
+		margin-top: 20px
+		text-align: center
+	.about_content
+		max-width: 740px
+		display: block	
+		margin: auto
+	.about_title, .about_more
+		text-align: center
+		margin: 0
+	.about_title
+		padding-top: 30px
+		font-size: 33px	
+	.aboutUs_2
+		margin: auto
+		margin-top: -40px
+		height: 900px
+		.about_img2
+			width: 384px
+			height: 300px
+			margin: 0
+			margin-top: 20px
+		.about_content
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			width: 750px
+			margin: auto
+		.about_text
+			line-height: 22px	
+		.about_title
+			font-size: 25px
+			margin-bottom: -15px
+		.about_types
+			width: 700px
+			margin-top: 17px
+			&:nth-child(even)
+				.about_title, .about_text
+					color: #607d8b
+	.show
+		transform: scaleY(1)
+		transition: opacity 1.5s				
+	.contacts 
+		width: 710px
+		font-size: 14px	
+	.follow_block
+		p
+			margin-left: 35px
+	.follow_icons
+		width: 90px
+		img 
+			width: 17px
+			height: 17px
+	.footer_text
+		font-size: 13px
+		max-width: 745px
+		margin-top: -15px
+	.next
+		left: 92%
+	.back
+		left: 2%
+	.slide
+		width: 768px
+		height: 560px
+	.slider
+		height: 560px
+	.footer
+		margin-top: 50px
+
+@media screen and (max-width: 480px)
+	.show
+		transform: scaleY(1)
+		transition: opacity 1.5s
+	.logo
+		height: 40px
+		margin-top: 13px
+		margin-bottom: 9px
+	.intro 
+		display: block	
+	.call 
+		width: 100%
+		display: block
+		padding: 10px
+		p
+			margin: 0	
+	.bg_content
+		margin-top: 42px
+
+@media screen and (max-width: 560px)	
+	.intro
+		display: block
+	.call 
+		width: 100%
+		height: 30px
+		margin-top: 13px
+		display: block
+		p
+			margin-top: 5px
+	.navbar
+		display: none		
+	.bg_content
+		margin-top: 44px
+	.bg_box
+		height: 230px
+		width: 460px
+		left: -622px
+		top: 70px
+	.slogan
+		font-size: 35px
+	.details
+		margin-top: 4px
+		width: 100%	
+	.services_item
+		margin-left: 15%
+	.aboutUs
+		max-width: 560px
+		text-align: left	
+	.about_content
+		max-width: 400px
+		margin-left: 65px
+		.about_text
+			margin: 30px 0
+			font-size: 20px
+	.about_img
+		float: left	
+		width: 100% !important	
+		height: 340px !important							
